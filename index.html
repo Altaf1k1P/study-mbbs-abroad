@@ -25,6 +25,29 @@
         body {
             font-family: 'Lexend', 'Noto Sans', sans-serif;
         }
+
+        @keyframes rotate360 {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes rotateReverse {
+            0% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        /* Apply Animation */
+        .flag-img {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .flag-img:hover {
+            animation: rotate360 0.5s forwards;
+        }
+
+        .flag-img:not(:hover) {
+            animation: rotateReverse 0.5s forwards;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -106,8 +129,44 @@
     <!-- counteis -->
     <section class="py-16 bg-gray-100 text-center" data-aos="zoom-in">
         <h2 class="text-3xl font-bold">Where would you like <span class="text-blue-600">like to Study</span></h2>
-        <p class="mt-4 text-gray-600">Explore our programs and begin your application today.</p>
-        <button id="openModal" class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg font-bold">Apply Now</button>
+        
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-6 md:px-20">
+            <!-- Country Option -->
+            <div class="flex flex-col items-center gap-3 p-4">
+                <img src="./assets/Russia.png" alt="Russia" class="w-20 h-20 object-cover rounded-full flag-img">
+                <p class="font-semibold">Russia</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 p-4">
+                <img src="./assets/georgia.png" alt="Georgia" class="w-20 h-20 object-cover rounded-full flag-img">
+                <p class="font-semibold">Georgia</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 p-4">
+                <img src="./assets/Kazakhstan.png" alt="Kazakhstan" class="w-20 h-20 object-cover rounded-full flag-img">
+                <p class="font-semibold">Kazakhstan</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 p-4">
+                <img src="./assets/Egypt.png" alt="Egypt" class="w-20 h-20 object-cover rounded-full flag-img">
+                <p class="font-semibold">Egypt</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 p-4">
+                <img src="./assets/kyrgyztan.png" alt="kyrgyztan" class="w-20 h-20 object-cover rounded-full flag-img">
+                <p class="font-semibold">kyrgyztan</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 p-4">
+                <img src="./assets/philippines.png" alt="philippines" class="w-20 h-20 object-cover rounded-full flag-img">
+                <p class="font-semibold">philippines</p>
+            </div>
+
+            <div class="flex flex-col items-center  gap-3 p-4">
+                <img src="./assets/Uzbekistan.png" alt="Uzbekistan" class="w-20 h-20 object-cover rounded-full flag-img" >
+                <p class="font-semibold">Uzbekistan</p>
+            </div>
+        </div>
     </section>
     
      <!-- Eligibility Criteria -->
