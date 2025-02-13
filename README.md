@@ -18,7 +18,7 @@ This project is a website designed to provide information and resources for stud
 ## Getting Started
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/study-mbbs-abroad.git
+    git clone https://github.com/Altaf1k1P/study-mbbs-abroad.git
     ```
 2. Open `index.html` in your browser to view the website.
 

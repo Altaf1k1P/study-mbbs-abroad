@@ -60,5 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 AOS.init({
     duration: 1000, // Animation duration in milliseconds
-    once: true,     // Animation runs only once
+    once: true, // Run animation once
+    delay: 200, // Add slight delay for smooth loading
+    mirror: false     
 });
